@@ -1,6 +1,7 @@
 ---
 import Navigation from '../components/Navigation.astro';
 import Hero from '../components/Hero.astro';
+import History from '../components/History.astro';
 ---
 
 <html lang="es">
@@ -10,9 +11,11 @@ import Hero from '../components/Hero.astro';
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>R y J</title>
+		<script is:inline src="/node_modules/preline/preline.js"></script>
 	</head>
 	<body class="max-w-screen-2xl mx-auto">
 		<Navigation/>
 		<Hero/>
+		<History/>
 	</body>
 </html>
