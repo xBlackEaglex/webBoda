@@ -6,19 +6,21 @@ import Date from '../components/Date.astro';
 import Contact from '../components/Contact.astro';
 ---
 
-<html lang="es" class="scroll-smooth">
+<html lang="es" class="scroll-smooth font-parrafo">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>R y J</title>
+		<link rel="stylesheet" href="../../public/fonts/titulo.css">
+		<link rel="stylesheet" href="../../public/fonts/parrafo.css">
 		<script src="../../node_modules/preline/dist/preline.js"></script>
 	</head>
 	<body class="max-w-screen-2xl mx-auto">
-			<Navigation/>
+			<Navigation client:load/>
 			<Hero/>
-			<History/>
+			<History client:idle/>
 			<Date/>
 			<Contact/>
 	</body>

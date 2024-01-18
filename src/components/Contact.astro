@@ -1,22 +1,33 @@
 ---
 
 ---
-<div id="contact" class="my-6">
-    <form action="formspree.io/f/xkndgegb" method="POST" class="max-w-sm mx-auto">
+
+<div id="contact" class="flex flex-col overflow-hidden mb-6 bg-white sm:grid sm:grid-cols-2 sm:my-8">
+    <div class="flex flex-col justify-center mx-auto text-center px-4">
+        <h1 class="font-titulo my-3 text-3xl font-medium text-black lg:text-5xl">
+            ¡Únete a nuestra Celebración!
+        </h1>
+        <p class="text-azul mb-6 md:mt-4 text-sm lg:text-xl">
+            Nos encantaría contar contigo en este día tan especial. Por favor, regístrate para que podamos asegurarnos de que tengas un lugar reservado en nuestra celebración. No podemos esperar para compartir este día inolvidable contigo. ¡Esperamos ansiosos tu confirmación!
+        </p>
+    </div>
+    <form action="https://formspree.io/f/xkndgegb" method="POST" class="max-w-sm mx-auto text-center">
         <div class="mb-5">
             <label class="block mb-2 text-sm font-medium text-gray-900">Nombre</label>
             <input 
             type="text"
-            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm p-2.5 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full "
+            name="nombre"
+            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm p-2.5 rounded-lg focus:ring-rosa-300 focus:border-azul block w-full "
             placeholder="nombre y apellido"
             required
             ></input>
         </div>
         <div class="mb-5">
-            <label class="block mb-2 text-sm font-medium text-gray-900">Cuantas Personas irán nos acompañaran (incluyéndote a ti)</label>
+            <label class="block mb-2 text-sm font-medium text-gray-900">Cuantas Personas irán contigo al evento (incluyéndote a ti)</label>
             <input
             type="number"
-            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+            name="invitados"
+            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-rosa-300 focus:border-azul block w-full p-2.5 "
             placeholder="numero de personas"
             required
             />
@@ -24,14 +35,14 @@
         <div class="mb-5">
             <label class="block mb-2 text-sm font-medium text-gray-900">Envíanos un lindo mensaje</label>
             <textarea
-            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+            name="mensaje"
+            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-rosa-300 focus:border-azul block w-full p-2.5 "
             placeholder="mensaje"
-            required
-            />
+            ></textarea>
         </div>
         <button
         type="submit"
-        class="text-azul bg-rosa-300 hover:bg-rosa-200 shadow-xl focus:outline-none focus:ring-offset-rosa-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+        class="text-azul bg-rosa-300 font-semibold hover:bg-rosa-200 shadow-md focus:outline-none focus:ring-offset-rosa-300 rounded-lg text-sm px-5 py-2.5 text-center"
         >Registrar</button>
     </form>
 </div>

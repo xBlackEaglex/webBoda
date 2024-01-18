@@ -2,7 +2,13 @@
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}','./node_modules/preline/dist/*.js',],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				'titulo': ['Dancing Script', 'cursive'],
+				'parrafo': ['Kite One', 'sans-serif']
+
+			}
+		},
 		colors: {
 			'rosa': { 
 				'50': '#fbf4f7', 
