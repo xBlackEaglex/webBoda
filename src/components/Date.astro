@@ -5,14 +5,14 @@ import lugar from "../../public/img/lugar.jpg";
 <article id="date" class="scroll-mt-[62px]">
     <section class="mt-1 overflow-hidde sm:grid sm:grid-cols-2">
         <div class="flex flex-col justify-center mx-auto text-center px-4">
-            <h1 class="my-3 text-xl uppercase font-medium text-black lg:text-3xl">
+            <h1 class="font-titulo my-3 text-3xl font-medium text-black lg:text-5xl">
                 Lugar Mágico para un Día Inolvidable
             </h1>
-            <p class="text-azul text-base md:mt-4 lg:text-xl">
-                Te esperamos este <span class="font-bold">24 de febrero del 2024</span>
+            <p class="text-azul text-sm md:mt-4 lg:text-xl">
+                Te esperamos este <span class="text-rosa-600 font-bold">24 de febrero del 2024</span>
             </p>
-            <p class="text-azul mb-3 md:mt-4 text-base lg:text-xl">
-                En <span class="font-bold">Finca Bonita</span> ubicada en calle Cuitzeo #210, Vasco de Quiroga La Piedad Mich.
+            <p class="text-azul mb-3 md:mt-4 text-sm lg:text-xl">
+                En <span class="text-rosa-600 font-bold">Finca Bonita</span> ubicada en calle Cuitzeo #210, Vasco de Quiroga La Piedad Mich.
             </p>
         </div>
         <Image class="w-[768px] lg:max-h-96 object-cover" src={lugar} alt="lugar"/>
@@ -24,8 +24,13 @@ import lugar from "../../public/img/lugar.jpg";
                 style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
             </iframe>
         </div>
-        <h1 class="flex justify-center items-center text-center uppercase my-3 text-xl px-2 font-medium text-black lg:text-3xl">
-            Te dejamos la ubicación para que no te pierdas
-        </h1>
+        <div class="flex flex-col justify-center items-center">
+            <h1 class="font-titulo text-center my-3 text-3xl px-2 font-medium text-black lg:text-5xl">
+                ¿No sabes como llegar? 
+            </h1>
+            <p class="text-azul text-center text-sm mb-3 md:mt-4 lg:text-xl">
+                No te preocupes, te dejamos la ubicación
+            </p>
+        </div>
     </section>
 </article>
