@@ -1,27 +1,31 @@
 ---
-import Navigation from '../components/Navigation.astro';
-import Hero from '../components/Hero.astro';
-import History from '../components/History.astro';
-import Date from '../components/Date.astro';
-import Contact from '../components/Contact.astro';
+import Navigation from "../components/Navigation.astro";
+import Hero from "../components/Hero.astro";
+import History from "../components/History.astro";
+import Date from "../components/Date.astro";
+import Contact from "../components/Contact.astro";
 ---
 
 <html lang="es" class="scroll-smooth font-parrafo">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>R y J</title>
-		<link rel="stylesheet" href="../../public/fonts/titulo.css">
-		<link rel="stylesheet" href="../../public/fonts/parrafo.css">
-		<script src="../../node_modules/preline/dist/preline.js"></script>
-	</head>
-	<body class="max-w-screen-2xl mx-auto">
-			<Navigation/>
-			<Hero/>
-			<History/>
-			<Date/>
-			<Contact/>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>R y J</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Kite+One&display=swap"
+            rel="stylesheet"
+        />
+        <script src="../../node_modules/preline/dist/preline.js"></script>
+    </head>
+    <body class="max-w-screen-2xl mx-auto">
+        <Navigation />
+        <Hero />
+        <History />
+        <Date />
+        <Contact />
+    </body>
 </html>
